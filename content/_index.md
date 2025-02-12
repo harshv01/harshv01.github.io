@@ -1,7 +1,7 @@
 ---
 # Leave the homepage title empty to use the site title
 title: "Harsh Verma"
-date: 2025-2-12
+date: 2025-02-12
 type: landing
 
 design:

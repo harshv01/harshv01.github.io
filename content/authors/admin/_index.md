@@ -174,5 +174,7 @@ skills:
 
 ## Harsh Verma
 
-I'm Harsh Verma, a robotics engineer at Confinity Robotics with a deep passion for Motion Planning, Computer Vision, and Artificial Intelligence. Studying at Worcester Polytechnic Institute, one of the leading robotics programs, strengthened my foundation in core robotics concepts. I'm driven by the challenge of developing intelligent robotic systems that push the boundaries of automation and autonomy. I'm always eager to collaborate on innovative projects and explore new opportunities in robotics— feel free to reach out! 
+I'm Harsh Verma, a robotics engineer at Confinity Robotics with a deep passion for Motion Planning, Computer Vision, and Artificial Intelligence. Studying at Worcester Polytechnic Institute, one of the leading robotics programs, strengthened my foundation in core robotics concepts. I'm driven by the challenge of developing intelligent robotic systems that push the boundaries of automation and autonomy. 
+
+I'm always eager to collaborate on innovative projects and explore new opportunities in robotics— feel free to reach out! 
 
