@@ -47,65 +47,55 @@ profiles:
   #   url: https://orcid.org/
 
 interests:
-  - Motion Planning
-  - Computer Vision
   - Artificial Intelligence
+  - Computer Vision
+  - Motion Planning
 
 education:
-  - area: MS RObotics Engineering
-    institution: Worcester Polytechnic Institute
+  - area: MS Robotics Engineering
+    institution: Worcester Polytechnic Institute, MA
     date_start: 2023-08-01
     date_end: 2025-05-07
     summary: |
-      Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
-    button:
-      text: 'Read Thesis'
-      url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
-    summary: |
-      GPA: 3.8/4.0
+      GPA: 3.66/4.00
 
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+      Coursework: Motion Planning, Computer Vision, Reinforcement Learning, Directed Research, Machine Learning, Robot Controls, Foundations of Robotics, Robot Dynamics, Project Management, Capstone Project
+    # button:
+    #   text: 'Read Thesis'
+    #   url: 'https://example.com'
+  - area: BTech Mechanical Engineering
+    institution: Vellore Institute of Technology, India
+    date_start: 2019-07-01
+    date_end: 2023-06-31
     summary: |
-      GPA: 3.4/4.0
-      
-      Courses included:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      GPA: 8.66/10.00
+
+      Coursework: CAD/CAM, Object Oriented Programming, Industrial Engineering & Management, Engineering Drawing, Design of Machine Elements.
+
 work:
-  - position: Director of Cloud Infrastructure
-    company_name: GenCoin
+  - position: Robotics Engineering Co-op
+    company_name: Confinity Robotics
     company_url: ''
     company_logo: ''
-    date_start: 2021-01-01
+    date_start: 2024-05-01
     date_end: ''
-    summary: |2-
-      Responsibilities include:
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - position: Backend Software Engineer
-    company_name: X
-    company_url: ''
-    company_logo: ''
-    date_start: 2016-01-01
-    date_end: 2020-12-31
     summary: |
       Responsibilities include:
-      - Migrated infrastructure to a new data center
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
-      - lorem ipsum dolor sit amet, consectetur adipiscing elit
+      - Developed custom Computer Vision algorithms with deep learning in Pytorch, which improved recognition accuracy by 95% and slashed the process cycle time by 10%.
+      - Executed Motion Planning for 6-DOF and 9-DOF industrial robotic arms on live robotic equipment and simulation, creating several valuable motion plan packages for the team to test prototypes on.
+      - Led and mentored a team of 3 interns to achieve a 100% increase in data acquisition speed, accelerating timelines. Owned end-to-end responsibility for the 3-D digital data acquisition process & documentation.
+      - Assisted the team in making continuous improvements to the Localization, Computer Vision and the Motion Planning pipeline. Gained valuable experience in CI/CD development.
+
+  - position: Directed Researcher
+    company_name: ELPIS lab @ Worcester Polytechnic Institute
+    company_url: ''
+    company_logo: ''
+    date_start: 2024-01-01
+    date_end: 2024-05-31
+    summary: |
+      Responsibilities include:
+      - Curated & optimized the Hand-Eye calibration pipeline for a 6-DOF UR10 Arm using ROS2, enhancing system performance in the ELPIS laboratory.
+      - Enabled control through Computer Vision for 2 laboratory projects by implementing the pipeline.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
@@ -124,30 +114,30 @@ skills:
         description: ''
         percent: 40
         icon: circle-stack
-  - name: Hobbies
-    color: '#eeac02'
-    color_border: '#f0bf23'
-    items:
-      - name: Hiking
-        description: ''
-        percent: 60
-        icon: person-simple-walk
-      - name: Cats
-        description: ''
-        percent: 100
-        icon: cat
-      - name: Photography
-        description: ''
-        percent: 80
-        icon: camera
+  # - name: Hobbies
+  #   color: '#eeac02'
+  #   color_border: '#f0bf23'
+  #   items:
+  #     - name: Hiking
+  #       description: ''
+  #       percent: 60
+  #       icon: person-simple-walk
+  #     - name: Cats
+  #       description: ''
+  #       percent: 100
+  #       icon: cat
+  #     - name: Photography
+  #       description: ''
+  #       percent: 80
+  #       icon: camera
 
-languages:
-  - name: English
-    percent: 100
-  - name: Chinese
-    percent: 75
-  - name: Portuguese
-    percent: 25
+# languages:
+#   - name: English
+#     percent: 100
+#   - name: Chinese
+#     percent: 75
+#   - name: Portuguese
+#     percent: 25
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -184,6 +174,4 @@ languages:
 
 ## About Me
 
-Harsh Verma is a robotics engineer currently working with Confinity Robotics. My interest lies in Motion Planning, Computer Vision and Artificial Intelligence. Attending one of the leading robotics program at Worcester Polytechnic Institute has led me 
-
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+I’m Harsh Verma, a robotics engineer at Confinity Robotics with a deep passion for Motion Planning, Computer Vision, and Artificial Intelligence. Studying at Worcester Polytechnic Institute, one of the leading robotics programs, strengthened my foundation in core robotics concepts. I’m driven by the challenge of developing intelligent robotic systems that push the boundaries of automation and autonomy. I’m always eager to collaborate on innovative projects and explore new opportunities in robotics— feel free to reach out! 
