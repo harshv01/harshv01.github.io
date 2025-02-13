@@ -19,12 +19,12 @@ sections:
       #   text: Download CV
       #   url: uploads/Roboticist_Harsh_Verma.pdf
     design:
-      css_class: light
+      css_class: dark
       background:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          # filename: stacked-peaks.svg
+          filename: WPI-red.png
           filters:
             brightness: 1.0
           size: cover
