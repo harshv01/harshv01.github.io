@@ -39,8 +39,10 @@ profiles:
   #   url: https://www.instagram.com/
   - icon: brands/github
     url: https://github.com/harshv01
+    label: GitHub
   - icon: brands/linkedin
     url: https://www.linkedin.com/in/harsh-v01/
+    label: LinkedIn
   # - icon: academicons/google-scholar
   #   url: https://scholar.google.com/
   # - icon: academicons/orcid
@@ -57,7 +59,6 @@ education:
     date_start: 2023-08-01
     date_end: 2025-05-07
     summary: |
-      GPA: 3.66/4.00
 
       Coursework: Motion Planning, Computer Vision, Reinforcement Learning, Directed Research, Machine Learning, Robot Controls, Foundations of Robotics, Robot Dynamics, Project Management, Capstone Project
     # button:
@@ -68,7 +69,6 @@ education:
     date_start: 2019-07-01
     date_end: 2023-06-15
     summary: |
-      GPA: 8.66/10.00
 
       Coursework: CAD/CAM, Object Oriented Programming, Industrial Engineering & Management, Engineering Drawing, Design of Machine Elements.
 
