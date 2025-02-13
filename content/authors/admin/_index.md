@@ -72,30 +72,30 @@ education:
 
       Coursework: CAD/CAM, Object Oriented Programming, Industrial Engineering & Management, Engineering Drawing, Design of Machine Elements.
 
-work:
-  - position: Robotics Engineering Co-op
-    company_name: Confinity Robotics
-    company_url: ''
-    company_logo: ''
-    date_start: 2024-05-01
-    date_end: ''
-    summary: |
-      Responsibilities include:
-      - Developed custom Computer Vision algorithms with deep learning in Pytorch, which improved recognition accuracy by 95% and slashed the process cycle time by 10%.
-      - Executed Motion Planning for 6-DOF and 9-DOF industrial robotic arms on live robotic equipment and simulation, creating several valuable motion plan packages for the team to test prototypes on.
-      - Led and mentored a team of 3 interns to achieve a 100% increase in data acquisition speed, accelerating timelines. Owned end-to-end responsibility for the 3-D digital data acquisition process & documentation.
-      - Assisted the team in making continuous improvements to the Localization, Computer Vision and the Motion Planning pipeline. Gained valuable experience in CI/CD development.
+# work:
+#   - position: Robotics Engineering Co-op
+#     company_name: Confinity Robotics
+#     company_url: ''
+#     company_logo: ''
+#     date_start: 2024-05-01
+#     date_end: ''
+#     summary: |
+#       Responsibilities include:
+#       - Developed custom Computer Vision algorithms with deep learning in Pytorch, which improved recognition accuracy by 95% and slashed the process cycle time by 10%.
+#       - Executed Motion Planning for 6-DOF and 9-DOF industrial robotic arms on live robotic equipment and simulation, creating several valuable motion plan packages for the team to test prototypes on.
+#       - Led and mentored a team of 3 interns to achieve a 100% increase in data acquisition speed, accelerating timelines. Owned end-to-end responsibility for the 3-D digital data acquisition process & documentation.
+#       - Assisted the team in making continuous improvements to the Localization, Computer Vision and the Motion Planning pipeline. Gained valuable experience in CI/CD development.
 
-  - position: Directed Researcher
-    company_name: ELPIS lab @ Worcester Polytechnic Institute
-    company_url: ''
-    company_logo: ''
-    date_start: 2024-01-01
-    date_end: 2024-05-31
-    summary: |
-      Responsibilities include:
-      - Curated & optimized the Hand-Eye calibration pipeline for a 6-DOF UR10 Arm using ROS2, enhancing system performance in the ELPIS laboratory.
-      - Enabled control through Computer Vision for 2 laboratory projects by implementing the pipeline.
+#   - position: Directed Researcher
+#     company_name: ELPIS lab @ Worcester Polytechnic Institute
+#     company_url: ''
+#     company_logo: ''
+#     date_start: 2024-01-01
+#     date_end: 2024-05-31
+#     summary: |
+#       Responsibilities include:
+#       - Curated & optimized the Hand-Eye calibration pipeline for a 6-DOF UR10 Arm using ROS2, enhancing system performance in the ELPIS laboratory.
+#       - Enabled control through Computer Vision for 2 laboratory projects by implementing the pipeline.
 
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
