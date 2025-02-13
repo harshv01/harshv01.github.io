@@ -6,7 +6,7 @@ type: landing
 
 design:
   # Default section spacing
-  spacing: "6rem"
+  spacing: "3rem"
 
 sections:
   - block: resume-biography-3
@@ -24,7 +24,7 @@ sections:
         color: black
         image:
           # Add your image background to `assets/media/`.
-          filename: blue.JPG
+          filename: stacked-peaks.svg
           filters:
             brightness: 1.0
           size: cover
@@ -36,7 +36,7 @@ sections:
   - block: markdown
     content:
       work:
-        - position: Robotics Engineering Co-op
+        - position: Robotics Engineer (Co-op)
           company_name: Confinity Robotics
           company_url: ''
           company_logo: ''
