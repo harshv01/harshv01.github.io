@@ -13,36 +13,47 @@
       margin: 0;
     }
 
-    .subheader {
-      background-color: #222; /* sync with main page header */
+    header {
+      background-color: #222;
       color: white;
+      padding: 16px 20px;
       display: flex;
       justify-content: space-between;
       align-items: center;
-      padding: 10px 20px;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 1.5rem;
+    }
+
+    header nav a {
+      color: white;
+      text-decoration: none;
       font-size: 1rem;
     }
 
-    .subheader .title {
-      font-weight: bold;
-    }
-
-    .subheader a {
-      color: white;
-      text-decoration: none;
+    .subheader {
+      background-color: #f0f0f0;
+      color: #222;
+      padding: 8px 20px;
+      font-size: 0.95rem;
     }
 
     .main-content {
       display: flex;
       flex-wrap: wrap;
       justify-content: center;
-      align-items: flex-start;
       gap: 40px;
       padding: 40px 20px 20px;
+      max-width: 1200px;
+      margin: 0 auto;
     }
 
     .gif-section {
-      flex: 1 1 300px;
+      flex: 1 1 450px;
+      display: flex;
+      justify-content: center;
     }
 
     .gif-section img {
@@ -52,7 +63,7 @@
     }
 
     .skills-section {
-      flex: 1 1 300px;
+      flex: 1 1 400px;
     }
 
     .skills-section h2 {
@@ -62,7 +73,8 @@
     .skills-list {
       display: flex;
       flex-wrap: wrap;
-      gap: 7px 10px; /* row-gap and column-gap */
+      gap: 7px 10px;
+      margin-bottom: 20px;
     }
 
     .skill-badge {
@@ -78,7 +90,6 @@
 
     .overview {
       max-width: 1000px;
-      margin: 40px auto;
       padding: 0 20px;
     }
 
@@ -91,9 +102,12 @@
   </style>
 </head>
 <body>
+  <header>
+    <h1>Harsh Verma</h1>
+    <nav><a href="../index.html">Home</a></nav>
+  </header>
   <div class="subheader">
-    <div class="title">Neural Radiance Fields (NeRF)</div>
-    <div><a href="../index.html">Home</a></div>
+    Neural Radiance Fields (NeRF)
   </div>
 
   <div class="main-content">
@@ -110,15 +124,14 @@
         <div class="skill-badge">Neural Rendering</div>
         <div class="skill-badge">Machine Learning</div>
       </div>
+      <div class="overview">
+        <h2>Project Overview</h2>
+        <p>
+          This project explores Neural Radiance Fields (NeRF), a novel deep learning-based method for synthesizing novel views of complex scenes by optimizing a continuous volumetric scene function. The implementation demonstrates how a sparse set of 2D images can be used to learn 3D geometry and appearance using a neural network.
+        </p>
+      </div>
     </div>
   </div>
-
-  <section class="overview">
-    <h2>Project Overview</h2>
-    <p>
-      This project explores Neural Radiance Fields (NeRF), a novel deep learning-based method for synthesizing novel views of complex scenes by optimizing a continuous volumetric scene function. The implementation demonstrates how a sparse set of 2D images can be used to learn 3D geometry and appearance using a neural network.
-    </p>
-  </section>
 
   <footer>
     <p>© 2025 Harsh Verma | <a href="https://github.com/harshv01/Neural-Radiance-Fields-NeRF">View on GitHub</a></p>
