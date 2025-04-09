@@ -20,6 +20,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      position: relative;
     }
 
     header h1 {
@@ -39,56 +40,45 @@
       font-size: 1rem;
     }
 
-    .project-header {
-      max-width: 1200px;
+    .project-title-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
       margin: 30px auto 0;
       padding: 0 20px;
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .gif-title-wrapper {
-      display: flex;
-      align-items: center;
-      gap: 20px;
-    }
-
-    .gif-title-wrapper img {
-      width: 60px;
-      height: 60px;
-      border-radius: 8px;
-      object-fit: cover;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-    }
-
-    .project-title {
-      font-size: 2rem;
+      font-size: 1.6rem;
       font-weight: bold;
     }
 
-    .github-link-inline {
-      font-size: 2rem;
-      font-weight: bold;
+    .project-title-container .project-title {
       display: flex;
       align-items: center;
-      gap: 6px;
+      gap: 10px;
     }
 
-    .github-link-inline a {
+    .project-title-container .github-link-inline {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .project-title-container a {
       text-decoration: none;
       color: #0366d6;
+      font-weight: bold;
+      font-size: 1.6rem;
       display: inline-flex;
       align-items: center;
     }
 
-    .github-link-inline a:hover {
+    .project-title-container a:hover {
       text-decoration: underline;
     }
 
-    .github-link-inline img {
-      height: 22px;
-      width: 22px;
+    .project-title-container img {
+      height: 20px;
+      width: 20px;
       margin-right: 6px;
     }
 
@@ -98,12 +88,20 @@
       justify-content: center;
       gap: 40px;
       padding: 40px 20px 20px;
-      max-width: 1200px;
+      max-width: 1000px;
       margin: 0 auto;
     }
 
     .gif-section {
-      display: none;
+      flex: 1 1 450px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .gif-section img {
+      width: 60%;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .right-section {
@@ -159,12 +157,10 @@
     <nav><a href="../../index.html">Home</a></nav>
   </header>
 
-  <div class="project-header">
-    <div class="gif-title-wrapper">
-      <img src="images/nerf_main.gif" alt="NeRF thumbnail">
-      <div class="project-title">Neural Radiance Fields (NeRF)</div>
-    </div>
-    <div class="github-link-inline">| 
+  <div class="project-title-container">
+    <div class="project-title">Neural Radiance Fields (NeRF)</div>
+    <div class="divider">|</div>
+    <div class="github-link-inline">
       <a href="https://github.com/harshv01/Neural-Radiance-Fields-NeRF" target="_blank">
         <img src="/icons/github.png" alt="GitHub icon">More on GitHub!
       </a>
@@ -172,6 +168,9 @@
   </div>
 
   <div class="main-content">
+    <div class="gif-section">
+      <img src="images/nerf_main.gif" alt="NeRF output demo">
+    </div>
     <div class="right-section">
       <div class="overview">
         <h2>Project Overview</h2>
