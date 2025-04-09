@@ -6,63 +6,114 @@
   <title>Harsh Verma | Robotics Engineer</title>
   <link rel="stylesheet" href="style.css" />
   <style>
-    .intro {
+    .container {
       display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      min-height: 100vh;
-      background-color: #111;
-      color: white;
-      text-align: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
     }
 
-    .intro h1 {
-      font-size: 3em;
-      margin-bottom: 0.2em;
+    .intro-section, .education-section {
+      width: 48%;
+      box-sizing: border-box;
     }
 
-    .intro p {
-      font-size: 1.5em;
-      margin-bottom: 1em;
+    .intro-section img {
+      max-width: 100%;
+      border-radius: 50%;
+      margin-bottom: 20px;
     }
 
-    .intro a {
-      background-color: #007acc;
-      color: white;
-      padding: 10px 20px;
+    .experience {
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .project-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      gap: 20px;
+      max-width: 1200px;
+      margin: 40px auto;
+      padding: 0 20px;
+    }
+
+    .project-card {
+      background-color: #fff;
+      padding: 15px;
       border-radius: 8px;
-      text-decoration: none;
-      font-size: 1em;
-      transition: background-color 0.3s;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s;
     }
 
-    .intro a:hover {
-      background-color: #005fa3;
+    .project-card:hover {
+      transform: scale(1.02);
+    }
+
+    .project-card img {
+      width: 100%;
+      height: auto;
+      border-radius: 8px;
+    }
+
+    .project-card h3 {
+      margin-top: 10px;
     }
   </style>
 </head>
 <body>
-  <section class="intro">
-    <h1>Hi, I'm Harsh Verma</h1>
-    <p>Robotics Engineer passionate about intelligent machines, motion planning, and perception.</p>
-    <a href="#projects">View My Work</a>
+  <header>
+    <h1>Harsh Verma</h1>
+  </header>
+
+  <div class="container">
+    <div class="intro-section">
+      <img src="your-photo.jpg" alt="Harsh Verma">
+      <h2>Hi, I'm Harsh</h2>
+      <p>
+        I'm a Robotics Engineer passionate about motion planning, perception, and intelligent autonomous systems.
+      </p>
+    </div>
+    <div class="education-section">
+      <h2>Education</h2>
+      <p><strong>Master's in Robotics Engineering</strong><br />XYZ University, 2023 – 2025</p>
+      <p><strong>Bachelor's in Mechanical Engineering</strong><br />ABC Institute of Technology, 2019 – 2023</p>
+    </div>
+  </div>
+
+  <section class="experience">
+    <h2>Experience</h2>
+    <p><strong>Robotics Engineer Intern</strong> – Confinity Robotics<br />
+    Developing motion planning modules for indoor navigation in constrained environments. Contributed to perception integration and autonomous control.</p>
   </section>
 
-  <section id="education">
-    <h2>Education</h2>
-    <p><strong>Master's in Robotics Engineering</strong><br />XYZ University, 2023 – 2025</p>
-    <p><strong>Bachelor's in Mechanical Engineering</strong><br />ABC Institute of Technology, 2019 – 2023</p>
-  </section>
+  <section class="project-grid">
+    <div class="project-card">
+      <img src="images/nerf.gif" alt="NeRF project">
+      <h3><a href="projects/nerf.html">Neural Radiance Fields (NeRF)</a></h3>
+      <p>Implemented NeRF to synthesize novel views of 3D scenes from sparse 2D images using PyTorch.</p>
+    </div>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <ul>
-      <li><a href="projects/fraud-detection.html">IEEE-CIS Fraud Detection</a></li>
-      <li><a href="projects/restaurant-robot.html">Restaurant Navigation Robot</a></li>
-      <li><a href="projects/capstone.html">Capstone Group Project</a></li>
-      <li><a href="projects/nerf.html">Neural Radiance Fields (NeRF)</a></li>
-    </ul>
+    <div class="project-card">
+      <img src="images/fraud.png" alt="Fraud Detection">
+      <h3><a href="projects/fraud-detection.html">IEEE-CIS Fraud Detection</a></h3>
+      <p>Created a pipeline to detect fraudulent online transactions using feature engineering and ensemble learning.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="images/robot.gif" alt="Restaurant Robot">
+      <h3><a href="projects/restaurant-robot.html">Restaurant Navigation Robot</a></h3>
+      <p>Designed a 4-wheeled robot that autonomously navigates rectilinear restaurant layouts using A* and D* Lite.</p>
+    </div>
+
+    <div class="project-card">
+      <img src="images/capstone.png" alt="Capstone Project">
+      <h3><a href="projects/capstone.html">Capstone Group Project</a></h3>
+      <p>Built a warehouse automation prototype using robotic arm control, object detection and ROS integration.</p>
+    </div>
   </section>
 
   <footer>
