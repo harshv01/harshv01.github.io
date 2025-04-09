@@ -10,12 +10,26 @@
       background-color: #fff;
       color: #222;
       font-family: Arial, sans-serif;
+      margin: 0;
     }
 
-    .project-title {
-      font-size: 2em;
+    .subheader {
+      background-color: #222; /* sync with main page header */
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+
+    .subheader .title {
       font-weight: bold;
-      margin: 20px;
+    }
+
+    .subheader a {
+      color: white;
+      text-decoration: none;
     }
 
     .main-content {
@@ -24,15 +38,15 @@
       justify-content: center;
       align-items: flex-start;
       gap: 40px;
-      padding: 20px;
+      padding: 40px 20px 20px;
     }
 
     .gif-section {
-      flex: 1 1 500px;
+      flex: 1 1 300px;
     }
 
     .gif-section img {
-      width: 100%;
+      width: 60%;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
@@ -41,29 +55,22 @@
       flex: 1 1 300px;
     }
 
-    .skills-section ul {
-      list-style: none;
-      padding-left: 0;
+    .skills-section h2 {
+      margin-bottom: 15px;
     }
 
-    .skills-section li {
+    .skills-list {
       display: flex;
-      align-items: center;
-      margin-bottom: 10px;
-    }
-
-    .skills-section img {
-      height: 24px;
-      width: 24px;
-      margin-right: 10px;
+      flex-wrap: wrap;
+      gap: 7px 10px; /* row-gap and column-gap */
     }
 
     .skill-badge {
-      background-color: #2d2d2d;
-      color: #fff;
-      padding: 10px 18px;
+      background-color: #e0e0e0;
+      color: #000;
+      padding: 6px 14px;
       border-radius: 9999px;
-      font-size: 0.95em;
+      font-size: 0.85em;
       font-weight: 500;
       display: inline-block;
       width: fit-content;
@@ -74,10 +81,20 @@
       margin: 40px auto;
       padding: 0 20px;
     }
+
+    footer {
+      padding: 20px;
+      text-align: center;
+      background: #f0f0f0;
+      font-size: 0.9rem;
+    }
   </style>
 </head>
 <body>
-  <div class="project-title">Neural Radiance Fields (NeRF)</div>
+  <div class="subheader">
+    <div class="title">Neural Radiance Fields (NeRF)</div>
+    <div><a href="../index.html">Home</a></div>
+  </div>
 
   <div class="main-content">
     <div class="gif-section">
@@ -85,12 +102,6 @@
     </div>
     <div class="skills-section">
       <h2>Skills</h2>
-      <!-- <ul>
-        <li><img src="../../icons/python.png" alt="Python"> Python</li>
-        <li><img src="../../icons/pytorch.png" alt="PyTorch"> PyTorch</li>
-        <li><img src="../../icons/c++.png" alt="PyTorch"> C++</li>
-        <li><img src="../../icons/ros.svg" alt="PyTorch"> ROS2</li>
-      </ul> -->
       <div class="skills-list">
         <div class="skill-badge">Python</div>
         <div class="skill-badge">PyTorch</div>
