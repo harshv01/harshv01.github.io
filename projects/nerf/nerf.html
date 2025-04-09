@@ -34,8 +34,8 @@
     }
 
     .subheader {
-      background-color: #f0f0f0;
-      color: #222;
+      background-color: #444;
+      color: white;
       padding: 8px 20px;
       font-size: 0.95rem;
     }
@@ -62,8 +62,21 @@
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
-    .skills-section {
+    .right-section {
       flex: 1 1 400px;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+    }
+
+    .overview {
+      max-width: 100%;
+      padding: 0;
+      margin-bottom: 20px;
+    }
+
+    .overview h2 {
+      margin-top: 0;
     }
 
     .skills-section h2 {
@@ -88,11 +101,6 @@
       width: fit-content;
     }
 
-    .overview {
-      max-width: 1000px;
-      padding: 0 20px;
-    }
-
     footer {
       padding: 20px;
       text-align: center;
@@ -114,21 +122,23 @@
     <div class="gif-section">
       <img src="images/nerf_main.gif" alt="NeRF output demo">
     </div>
-    <div class="skills-section">
-      <h2>Skills</h2>
-      <div class="skills-list">
-        <div class="skill-badge">Python</div>
-        <div class="skill-badge">PyTorch</div>
-        <div class="skill-badge">Computer Vision</div>
-        <div class="skill-badge">3D Reconstruction</div>
-        <div class="skill-badge">Neural Rendering</div>
-        <div class="skill-badge">Machine Learning</div>
-      </div>
+    <div class="right-section">
       <div class="overview">
         <h2>Project Overview</h2>
         <p>
           This project explores Neural Radiance Fields (NeRF), a novel deep learning-based method for synthesizing novel views of complex scenes by optimizing a continuous volumetric scene function. The implementation demonstrates how a sparse set of 2D images can be used to learn 3D geometry and appearance using a neural network.
         </p>
+      </div>
+      <div class="skills-section">
+        <h2>Skills</h2>
+        <div class="skills-list">
+          <div class="skill-badge">Python</div>
+          <div class="skill-badge">PyTorch</div>
+          <div class="skill-badge">Computer Vision</div>
+          <div class="skill-badge">3D Reconstruction</div>
+          <div class="skill-badge">Neural Rendering</div>
+          <div class="skill-badge">Machine Learning</div>
+        </div>
       </div>
     </div>
   </div>
