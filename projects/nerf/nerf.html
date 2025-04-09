@@ -72,7 +72,7 @@
     .overview {
       max-width: 100%;
       padding: 0;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .overview h2 {
@@ -80,14 +80,14 @@
     }
 
     .skills-section h2 {
-      margin-bottom: 15px;
+      margin-bottom: 10px;
     }
 
     .skills-list {
       display: flex;
       flex-wrap: wrap;
       gap: 7px 10px;
-      margin-bottom: 20px;
+      margin-bottom: 10px;
     }
 
     .skill-badge {
@@ -99,6 +99,29 @@
       font-weight: 500;
       display: inline-block;
       width: fit-content;
+    }
+
+    .github-link {
+      margin-top: 10px;
+      font-size: 0.95rem;
+    }
+
+    .github-link a {
+      text-decoration: none;
+      color: #0366d6;
+      font-weight: bold;
+      display: inline-flex;
+      align-items: center;
+    }
+
+    .github-link a:hover {
+      text-decoration: underline;
+    }
+
+    .github-link img {
+      height: 16px;
+      width: 16px;
+      margin-right: 6px;
     }
 
     footer {
@@ -138,6 +161,11 @@
           <div class="skill-badge">3D Reconstruction</div>
           <div class="skill-badge">Neural Rendering</div>
           <div class="skill-badge">Machine Learning</div>
+        </div>
+        <div class="github-link">
+          <a href="https://github.com/harshv01/Neural-Radiance-Fields-NeRF" target="_blank">
+            <img src="../icons/github-mark.svg" alt="GitHub icon">More on GitHub!
+          </a>
         </div>
       </div>
     </div>
