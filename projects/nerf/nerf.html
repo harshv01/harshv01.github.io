@@ -39,13 +39,27 @@
       font-size: 1rem;
     }
 
-    .project-title-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
+    .project-header {
       max-width: 1200px;
       margin: 30px auto 0;
       padding: 0 20px;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .gif-title-wrapper {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+    }
+
+    .gif-title-wrapper img {
+      width: 60px;
+      height: 60px;
+      border-radius: 8px;
+      object-fit: cover;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
     }
 
     .project-title {
@@ -53,13 +67,19 @@
       font-weight: bold;
     }
 
+    .github-link-inline {
+      font-size: 2rem;
+      font-weight: bold;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
     .github-link-inline a {
       text-decoration: none;
       color: #0366d6;
-      font-weight: bold;
       display: inline-flex;
       align-items: center;
-      font-size: 1.1rem;
     }
 
     .github-link-inline a:hover {
@@ -67,8 +87,8 @@
     }
 
     .github-link-inline img {
-      height: 20px;
-      width: 20px;
+      height: 22px;
+      width: 22px;
       margin-right: 6px;
     }
 
@@ -83,15 +103,7 @@
     }
 
     .gif-section {
-      flex: 1 1 450px;
-      display: flex;
-      justify-content: center;
-    }
-
-    .gif-section img {
-      width: 60%;
-      border-radius: 8px;
-      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      display: none;
     }
 
     .right-section {
@@ -147,9 +159,12 @@
     <nav><a href="../../index.html">Home</a></nav>
   </header>
 
-  <div class="project-title-container">
-    <div class="project-title">Neural Radiance Fields (NeRF)</div>
-    <div class="github-link-inline">
+  <div class="project-header">
+    <div class="gif-title-wrapper">
+      <img src="images/nerf_main.gif" alt="NeRF thumbnail">
+      <div class="project-title">Neural Radiance Fields (NeRF)</div>
+    </div>
+    <div class="github-link-inline">| 
       <a href="https://github.com/harshv01/Neural-Radiance-Fields-NeRF" target="_blank">
         <img src="/icons/github.png" alt="GitHub icon">More on GitHub!
       </a>
@@ -157,9 +172,6 @@
   </div>
 
   <div class="main-content">
-    <div class="gif-section">
-      <img src="images/nerf_main.gif" alt="NeRF output demo">
-    </div>
     <div class="right-section">
       <div class="overview">
         <h2>Project Overview</h2>
