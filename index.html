@@ -8,42 +8,58 @@
   <style>
     .container {
       display: flex;
-      flex-wrap: wrap;
       justify-content: space-between;
       max-width: 1200px;
       margin: 40px auto;
       padding: 0 20px;
+      gap: 20px;
     }
 
-    .left-column, .right-column {
-      width: 48%;
-      box-sizing: border-box;
+    .profile-photo {
+      flex: 0 0 400px;
     }
 
-    .intro-block {
-      margin-bottom: 40px;
+    .profile-photo img {
+      width: 100%;
+      height: 400px;
+      object-fit: contain;
+      border-radius: 20px;
     }
 
-    .intro-block img {
-      max-width: 100%;
-      border-radius: 50%;
-      margin-bottom: 20px;
+    .education-preview, .experience-preview {
+      flex: 1;
     }
 
-    .education-entry {
+    .card-preview-grid {
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+
+    .card-preview {
+      background-color: #fff;
+      border-radius: 8px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 15px;
+      transition: transform 0.2s;
+      text-decoration: none;
+      color: inherit;
       display: flex;
       align-items: center;
-      margin-bottom: 20px;
+      gap: 15px;
     }
 
-    .education-entry img {
+    .card-preview img {
       height: 48px;
       width: auto;
-      margin-right: 15px;
     }
 
-    .experience {
-      max-width: 1200px;
+    .card-preview:hover {
+      transform: scale(1.03);
+    }
+
+    .intro-block, .experience-section, .education-section-detail {
+      max-width: 1000px;
       margin: 40px auto;
       padding: 0 20px;
     }
@@ -102,38 +118,52 @@
     <h1>Harsh Verma</h1>
   </header>
 
+  <!-- Top Layout -->
   <div class="container">
-    <div class="left-column">
-      <div class="education-section">
-        <h2>Education</h2>
-        <div class="education-entry">
-          <img src="page_images/wpi_logo.jpg" alt="WPI University logo">
-          <p><strong>MS in Robotics Engineering</strong><br />Worcester Polytechnic Institute, 2023 – 2025</p>
-        </div>
-        <div class="education-entry">
+    <div class="profile-photo">
+      <img src="page_images/profile.jpeg" alt="Harsh Verma">
+    </div>
+
+    <div class="education-preview">
+      <h2>Education</h2>
+      <div class="card-preview-grid">
+        <a class="card-preview" href="#education-details">
+          <img src="page_images/wpi_logo.jpg" alt="WPI logo">
+          <div>
+            <strong>MS in Robotics Engineering</strong><br />WPI (2023–2025)
+          </div>
+        </a>
+        <a class="card-preview" href="#education-details">
           <img src="page_images/vit_logo.png" alt="VIT logo">
-          <p><strong>BTech in Mechanical Engineering</strong><br />Vellore Institute of Technology, 2019 – 2023</p>
-        </div>
+          <div>
+            <strong>BTech in Mechanical Engineering</strong><br />VIT (2019–2023)
+          </div>
+        </a>
       </div>
     </div>
 
-    <div class="right-column">
-      <div class="intro-block">
-        <img src="page_images/profile.jpeg" alt="Harsh Verma">
-        <h2>Hi, I'm Harsh</h2>
-        <p>
-          I'm a Robotics Engineer passionate about motion planning, perception, and intelligent autonomous systems.
-        </p>
+    <div class="experience-preview">
+      <h2>Experience</h2>
+      <div class="card-preview-grid">
+        <a class="card-preview" href="#experience-details">
+          <img src="page_images/placeholder_icon.png" alt="Company logo">
+          <div>
+            <strong>Robotics Engineer Intern</strong><br />Confinity Robotics
+          </div>
+        </a>
       </div>
     </div>
   </div>
 
-  <section class="experience">
-    <h2>Experience</h2>
-    <p><strong>Robotics Engineer Intern</strong> – Confinity Robotics<br />
-    Developing motion planning modules for indoor navigation in constrained environments. Contributed to perception integration and autonomous control.</p>
+  <!-- Intro Section -->
+  <section class="intro-block">
+    <h2>Hi, I'm Harsh</h2>
+    <p>
+      I'm a Robotics Engineer passionate about motion planning, perception, and intelligent autonomous systems.
+    </p>
   </section>
 
+  <!-- Projects Section -->
   <section class="project-grid">
     <a class="project-card" href="projects/nerf/nerf.html">
       <img src="/projects/nerf/images/nerf_main.gif" alt="NeRF project GIF">
@@ -176,6 +206,18 @@
       <h3>Capstone Group Project</h3>
       <p>Built a warehouse automation prototype using robotic arm control, object detection and ROS integration.</p>
     </a>
+  </section>
+
+  <!-- Work Experience Section -->
+  <section class="experience-section" id="experience-details">
+    <h2>Work Experience</h2>
+    <!-- Add detailed experience content here -->
+  </section>
+
+  <!-- Education Detail Section -->
+  <section class="education-section-detail" id="education-details">
+    <h2>Education</h2>
+    <!-- Add detailed education content here -->
   </section>
 
   <footer>
