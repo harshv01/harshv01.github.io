@@ -50,7 +50,7 @@
 
     .project-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+      grid-template-columns: repeat(4, 1fr);
       gap: 20px;
       max-width: 1200px;
       margin: 40px auto;
@@ -62,21 +62,38 @@
       padding: 15px;
       border-radius: 8px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-      transition: transform 0.2s;
+      transition: transform 0.25s ease;
+      text-decoration: none;
+      color: inherit;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      font-size: 0.9rem;
     }
 
     .project-card:hover {
-      transform: scale(1.02);
+      transform: scale(1.06);
     }
 
     .project-card img {
       width: 100%;
-      height: auto;
+      aspect-ratio: 1 / 1;
+      object-fit: fill;
       border-radius: 8px;
     }
 
     .project-card h3 {
       margin-top: 10px;
+      font-size: 1rem;
+    }
+
+    .project-card a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .project-card a h3 {
+      color: #0366d6;
     }
   </style>
 </head>
@@ -118,47 +135,47 @@
   </section>
 
   <section class="project-grid">
-    <div class="project-card">
+    <a class="project-card" href="projects/nerf/nerf.html">
       <img src="/projects/nerf/images/nerf_main.gif" alt="NeRF project GIF">
-      <h3><a href="projects/nerf/nerf.html">Neural Radiance Fields (NeRF)</a></h3>
+      <h3>Neural Radiance Fields (NeRF)</h3>
       <p>Implemented NeRF to synthesize novel views of 3D scenes from sparse 2D images using PyTorch.</p>
-    </div>
+    </a>
 
-    <div class="project-card">
+    <a class="project-card" href="projects/sfm/sfm.html">
       <img src="/projects/sfm/images/sfm_main.gif" alt="Structure from Motion GIF">
-      <h3><a href="projects/sfm/sfm.html">Structure from Motion (SfM)</a></h3>
+      <h3>Structure from Motion (SfM)</h3>
       <p>Reconstructed 3D scenes from 2D images using Structure from Motion with feature matching, camera pose estimation, and bundle adjustment.</p>
-    </div>
+    </a>
 
-    <div class="project-card">
+    <a class="project-card" href="projects/vio/vio.html">
       <img src="/projects/vio/images/vio_main.gif" alt="VIO GIF">
-      <h3><a href="projects/vio/vio.html">Visual Inertial Odometry (VIO)</a></h3>
+      <h3>Visual Inertial Odometry (VIO)</h3>
       <p>Developed a Visual-Inertial Odometry system using time series data to fuse camera and IMU inputs, combining classical filtering and deep learning for accurate 6-DoF motion estimation.</p>
-    </div>
+    </a>
 
-    <div class="project-card">
+    <a class="project-card" href="projects/einstein/einstein.html">
       <img src="/projects/einstein/images/einstein_main.gif" alt="Einstein Vision GIF">
-      <h3><a href="projects/einstein/einstein.html">Tesla-Inspired Dashboard</a></h3>
+      <h3>Tesla-Inspired Dashboard</h3>
       <p>Created a Tesla-inspired driving scene visualization system using deep learning and time-synced video data, integrating several deep learning models with 3D rendering in Blender.</p>
-    </div>
-    
-    <div class="project-card">
+    </a>
+
+    <a class="project-card" href="projects/fraud-detection.html">
       <img src="images/fraud.png" alt="Fraud Detection">
-      <h3><a href="projects/fraud-detection.html">IEEE-CIS Fraud Detection</a></h3>
+      <h3>IEEE-CIS Fraud Detection</h3>
       <p>Created a pipeline to detect fraudulent online transactions using feature engineering and ensemble learning.</p>
-    </div>
+    </a>
 
-    <div class="project-card">
+    <a class="project-card" href="projects/restaurant-robot.html">
       <img src="images/robot.gif" alt="Restaurant Robot">
-      <h3><a href="projects/restaurant-robot.html">Restaurant Navigation Robot</a></h3>
+      <h3>Restaurant Navigation Robot</h3>
       <p>Designed a 4-wheeled robot that autonomously navigates rectilinear restaurant layouts using A* and D* Lite.</p>
-    </div>
+    </a>
 
-    <div class="project-card">
+    <a class="project-card" href="projects/capstone.html">
       <img src="images/capstone.png" alt="Capstone Project">
-      <h3><a href="projects/capstone.html">Capstone Group Project</a></h3>
+      <h3>Capstone Group Project</h3>
       <p>Built a warehouse automation prototype using robotic arm control, object detection and ROS integration.</p>
-    </div>
+    </a>
   </section>
 
   <footer>
