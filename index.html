@@ -15,12 +15,16 @@
       padding: 0 20px;
     }
 
-    .intro-section, .education-section {
+    .left-column, .right-column {
       width: 48%;
       box-sizing: border-box;
     }
 
-    .intro-section img {
+    .intro-block {
+      margin-bottom: 40px;
+    }
+
+    .intro-block img {
       max-width: 100%;
       border-radius: 50%;
       margin-bottom: 20px;
@@ -82,22 +86,27 @@
   </header>
 
   <div class="container">
-    <div class="intro-section">
-      <img src="page_images/profile.jpeg" alt="Harsh Verma">
-      <h2>Hi, I'm Harsh</h2>
-      <p>
-        I'm a Robotics Engineer passionate about motion planning, perception, and intelligent autonomous systems.
-      </p>
-    </div>
-    <div class="education-section">
-      <h2>Education</h2>
-      <div class="education-entry">
-        <img src="page_images/wpi_logo.jpg" alt="WPI University logo">
-        <p><strong>MS in Robotics Engineering</strong><br />Worcester Polytechnic Institute, 2023 – 2025</p>
+    <div class="left-column">
+      <div class="education-section">
+        <h2>Education</h2>
+        <div class="education-entry">
+          <img src="page_images/wpi_logo.jpg" alt="WPI University logo">
+          <p><strong>MS in Robotics Engineering</strong><br />Worcester Polytechnic Institute, 2023 – 2025</p>
+        </div>
+        <div class="education-entry">
+          <img src="page_images/vit_logo.png" alt="VIT logo">
+          <p><strong>BTech in Mechanical Engineering</strong><br />Vellore Institute of Technology, 2019 – 2023</p>
+        </div>
       </div>
-      <div class="education-entry">
-        <img src="page_images/vit_logo.png" alt="VIT logo">
-        <p><strong>BTech in Mechanical Engineering</strong><br />Vellore Institute of Technology, 2019 – 2023</p>
+    </div>
+
+    <div class="right-column">
+      <div class="intro-block">
+        <img src="page_images/profile.jpeg" alt="Harsh Verma">
+        <h2>Hi, I'm Harsh</h2>
+        <p>
+          I'm a Robotics Engineer passionate about motion planning, perception, and intelligent autonomous systems.
+        </p>
       </div>
     </div>
   </div>
