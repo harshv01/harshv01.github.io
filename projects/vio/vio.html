@@ -152,32 +152,31 @@
   </header>
 
   <div class="project-title-container">
-    <div class="project-title">Neural Radiance Fields (NeRF)</div>
+    <div class="project-title">Visual Inertial Odometry (VIO)</div>
   </div>
 
   <div class="main-content">
     <div class="gif-section">
-      <img src="images/nerf_main.gif" alt="NeRF output demo">
+      <img src="images/vio_main.gif" alt="VIO output demo">
     </div>
     <div class="right-section">
       <div class="overview">
         <h2>Project Overview</h2>
         <p>
-          This project explores Neural Radiance Fields (NeRF), a novel deep learning-based method for synthesizing novel views of complex scenes by optimizing a continuous volumetric scene function. The implementation demonstrates how a sparse set of 2D images can be used to learn 3D geometry and appearance using a neural network.
+            In this project, I implemented both classical and deep learning-based Visual-Inertial Odometry (VIO) methods to estimate 6-DoF camera motion. In Phase 1, I worked with the EuRoC dataset—structured as time series data—to implement key components of the MSCKF algorithm, including IMU propagation, state augmentation, and measurement updates for fusing vision and inertial signals. In Phase 2, I generated synthetic sensor data in Blender and trained neural networks to predict relative pose using vision only, IMU only, and a combination of both. I evaluated all approaches using RMSE ATE and trajectory plots, comparing predictions with ground truth. This project deepened my understanding of sensor fusion, time-dependent data processing, and motion estimation in dynamic environments.
         </p>
       </div>
       <div class="skills-section">
         <h2>Skills</h2>
         <div class="skills-list">
+          <div class="skill-badge">C++</div>
           <div class="skill-badge">Python</div>
           <div class="skill-badge">PyTorch</div>
           <div class="skill-badge">Computer Vision</div>
-          <div class="skill-badge">3D Reconstruction</div>
-          <div class="skill-badge">Neural Rendering</div>
           <div class="skill-badge">Machine Learning</div>
         </div>
         <div class="github-link-inline">
-          <a href="https://github.com/harshv01/Neural-Radiance-Fields-NeRF" target="_blank">
+          <a href="https://github.com/harshv01/Visual-Inertial-Odometry" target="_blank">
             <img src="/icons/github.png" alt="GitHub icon">More on GitHub!
           </a>
         </div>
