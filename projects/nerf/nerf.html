@@ -41,42 +41,34 @@
     }
 
     .project-title-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
       max-width: 1000px;
       margin: 30px auto 0;
       padding: 0 20px;
-      font-size: 1.6rem;
+    }
+
+    .project-title {
+      font-size: 2rem;
       font-weight: bold;
     }
 
-    .project-title-container .project-title {
-      display: flex;
-      align-items: center;
-      gap: 10px;
+    .github-link-inline {
+      margin-top: 8px;
     }
 
-    .project-title-container .github-link-inline {
-      display: flex;
-      align-items: center;
-      gap: 10px;
-    }
-
-    .project-title-container a {
+    .github-link-inline a {
       text-decoration: none;
       color: #0366d6;
       font-weight: bold;
-      font-size: 1.6rem;
+      font-size: 1.5rem;
       display: inline-flex;
       align-items: center;
     }
 
-    .project-title-container a:hover {
+    .github-link-inline a:hover {
       text-decoration: underline;
     }
 
-    .project-title-container img {
+    .github-link-inline img {
       height: 20px;
       width: 20px;
       margin-right: 6px;
@@ -158,12 +150,7 @@
   </header>
 
   <div class="project-title-container">
-    <div class="project-title">Neural Radiance Fields (NeRF) 
-    <!-- <div class="github-link-inline"> -->
-      <!-- <a href="https://github.com/harshv01/Neural-Radiance-Fields-NeRF" target="_blank">
-        <img src="/icons/github.png" alt="GitHub icon">GitHub
-      </a> -->
-    </div>
+    <div class="project-title">Neural Radiance Fields (NeRF)</div>
   </div>
 
   <div class="main-content">
@@ -187,9 +174,9 @@
           <div class="skill-badge">Neural Rendering</div>
           <div class="skill-badge">Machine Learning</div>
         </div>
-        <div>
+        <div class="github-link-inline">
           <a href="https://github.com/harshv01/Neural-Radiance-Fields-NeRF" target="_blank">
-            <img src="/icons/github.png" alt="GitHub icon">GitHub
+            <img src="/icons/github.png" alt="GitHub icon">More on GitHub!
           </a>
         </div>
       </div>
