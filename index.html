@@ -161,6 +161,52 @@
       font-size: 0.7rem;
       font-weight: 500;
     }
+
+    .experience-section {
+      max-width: 1000px;
+      margin: 60px auto;
+      padding: 0 20px;
+    }
+
+    .experience-entry {
+      display: flex;
+      align-items: flex-start;
+      gap: 20px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ddd;
+      padding-bottom: 30px;
+    }
+
+    .experience-entry img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      border-radius: 8px;
+    }
+
+    .experience-entry h3 {
+      margin: 0;
+      font-size: 1.2rem;
+      color: #333;
+    }
+
+    .experience-entry p {
+      margin: 4px 0 12px;
+      font-size: 0.95rem;
+      color: #666;
+    }
+
+    .experience-entry ul {
+      margin: 0;
+      padding-left: 20px;
+      font-size: 0.9rem;
+      color: #444;
+    }
+
+    .experience-entry ul li {
+      margin-bottom: 8px;
+    }
+
   </style>
 </head>
 <body>
@@ -223,32 +269,34 @@
     <section class="section-block" id="experience-details">
       <h2>Work Experience</h2>
       <div class="card-preview-grid">
-        <a class="card-preview" href="#experience-details">
-          <img src="page_images/confinity_robotics_logo.jfif" alt="Company logo">
+
+        <a class="card-preview" href="#confinity">
+          <img src="page_images/confinity_robotics_logo.jfif" alt="Confinity logo">
           <div>
             <strong>Robotics Engineering Co-op (Present)</strong><br />
             Confinity Robotics<br />
             <span class="experience-dates">May 2024 – May 2025</span>
           </div>
         </a>
-
-        <a class="card-preview" href="#experience-details">
-          <img src="icons/elpis_logo.jpg" alt="Company logo">
+        
+        <a class="card-preview" href="#elpis">
+          <img src="icons/elpis_logo.jpg" alt="ELPIS logo">
           <div>
             <strong>Directed Researcher</strong><br />
             WPI ELPIS Lab<br />
             <span class="experience-dates">Jan 2024 – May 2024</span>
           </div>
         </a>
-
-        <a class="card-preview" href="#experience-details">
-          <img src="icons/falcons_logo.jfif" alt="Company logo">
+        
+        <a class="card-preview" href="#falcons">
+          <img src="icons/falcons_logo.jfif" alt="SAE Falcons logo">
           <div>
             <strong>Student Engineer</strong><br />
             Assailing Falcons, SAE Aero Design<br />
             <span class="experience-dates">Jan 2022 – May 2023</span>
           </div>
         </a>
+        
       </div>
     </section>
   </div>
@@ -314,8 +362,48 @@
   <!-- Work Experience Section -->
   <section class="experience-section" id="experience-details">
     <h2>Work Experience</h2>
-    <!-- Add detailed experience content here -->
+  
+    <div class="experience-entry" id="confinity">
+      <img src="page_images/confinity_robotics_logo.jfif" alt="Confinity Robotics" />
+      <div>
+        <h3>Robotics Engineering Co-op</h3>
+        <p><strong>Confinity Robotics</strong> • May 2024 – May 2025</p>
+        <ul>
+          <li>Improved text recognition accuracy by 95% using PyTorch-based vision models; reduced process time by 10%.</li>
+          <li>Enhanced 3D vision-based localization using stereo + depth cameras for precise spatial awareness.</li>
+          <li>Streamlined motion planning in ROS2 with real-time C++ modules and implemented CI/CD pipelines.</li>
+          <li>Led 3 interns, boosting data collection speed 2× and improved documentation of the data acquisition pipeline.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="experience-entry" id="elpis">
+      <img src="icons/elpis_logo.jpg" alt="ELPIS Lab" />
+      <div>
+        <h3>Directed Researcher</h3>
+        <p><strong>ELPIS Lab, Worcester Polytechnic Institute</strong> • Jan 2024 – May 2024</p>
+        <ul>
+          <li>Optimized hand-eye calibration for a 6-DOF UR10 robotic arm using AprilTags and checkerboards.</li>
+          <li>Automated the camera calibration and image capture workflow to enable one-click calibration.</li>
+          <li>Used ROS2, C++, and OpenCV to compute real-time TF transforms, improving localization accuracy by 15%.</li>
+        </ul>
+      </div>
+    </div>
+  
+    <div class="experience-entry" id="falcons">
+      <img src="icons/falcons_logo.jfif" alt="SAE Falcons" />
+      <div>
+        <h3>Student Engineer</h3>
+        <p><strong>SAE Aero Design – Assailing Falcons</strong> • Jan 2022 – May 2023</p>
+        <ul>
+          <li>Developed autonomous UAV tracking with classical CV and deep learning methods.</li>
+          <li>Designed aircraft fuselage in SolidWorks for 3-meter wingspan UAV.</li>
+          <li>Helped the team secure 3rd worldwide rank in SAE Aero Design East 2022.</li>
+        </ul>
+      </div>
+    </div>
   </section>
+  
 
   <!-- Education Detail Section -->
   <section class="education-section-detail" id="education-details">
