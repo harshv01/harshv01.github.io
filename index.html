@@ -16,12 +16,12 @@
     }
 
     .profile-photo {
-      flex: 0 0 400px;
+      flex: 0 0 350px;
     }
 
     .profile-photo img {
       width: 100%;
-      height: 400px;
+      height: 350px;
       object-fit: contain;
       border-radius: 20px;
     }
@@ -111,6 +111,21 @@
     .project-card a h3 {
       color: #0366d6;
     }
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px 8px;
+      margin-top: 10px;
+    }
+
+    .skill-badge {
+      background-color: #e0e0e0;
+      color: #000;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      font-size: 0.7rem;
+      font-weight: 500;
+    }
   </style>
 </head>
 <body>
@@ -146,7 +161,7 @@
       <h2>Experience</h2>
       <div class="card-preview-grid">
         <a class="card-preview" href="#experience-details">
-          <img src="page_images/placeholder_icon.png" alt="Company logo">
+          <img src="page_images/confinity_robotics_logo.jfif" alt="Company logo">
           <div>
             <strong>Robotics Engineer Intern</strong><br />Confinity Robotics
           </div>
@@ -169,43 +184,55 @@
       <img src="/projects/nerf/images/nerf_main.gif" alt="NeRF project GIF">
       <h3>Neural Radiance Fields (NeRF)</h3>
       <p>Implemented NeRF to synthesize novel views of 3D scenes from sparse 2D images using PyTorch.</p>
+      <div class="skills-list">
+        <div class="skill-badge">Python</div>
+        <div class="skill-badge">PyTorch</div>
+        <div class="skill-badge">Computer Vision</div>
+        <div class="skill-badge">3D Reconstruction</div>
+        <div class="skill-badge">Neural Rendering</div>
+        <div class="skill-badge">Machine Learning</div>
+      </div>
     </a>
 
     <a class="project-card" href="projects/sfm/sfm.html">
       <img src="/projects/sfm/images/sfm_main.gif" alt="Structure from Motion GIF">
       <h3>Structure from Motion (SfM)</h3>
       <p>Reconstructed 3D scenes from 2D images using Structure from Motion with feature matching, camera pose estimation, and bundle adjustment.</p>
+      <div class="skills-list">
+        <div class="skill-badge">Python</div>
+        <div class="skill-badge">PyTorch</div>
+        <div class="skill-badge">Computer Vision</div>
+        <div class="skill-badge">3D Reconstruction</div>
+        <div class="skill-badge">Deep Learning</div>
+      </div>
     </a>
 
     <a class="project-card" href="projects/vio/vio.html">
       <img src="/projects/vio/images/vio_main.gif" alt="VIO GIF">
       <h3>Visual Inertial Odometry (VIO)</h3>
       <p>Developed a Visual-Inertial Odometry system using time series data to fuse camera and IMU inputs, combining classical filtering and deep learning for accurate 6-DoF motion estimation.</p>
+      <div class="skills-list">
+        <div class="skill-badge">C++</div>
+        <div class="skill-badge">Python</div>
+        <div class="skill-badge">PyTorch</div>
+        <div class="skill-badge">Computer Vision</div>
+        <div class="skill-badge">Machine Learning</div>
+      </div>
     </a>
 
     <a class="project-card" href="projects/einstein/einstein.html">
       <img src="/projects/einstein/images/einstein_main.gif" alt="Einstein Vision GIF">
       <h3>Tesla-Inspired Dashboard</h3>
       <p>Created a Tesla-inspired driving scene visualization system using deep learning and time-synced video data, integrating several deep learning models with 3D rendering in Blender.</p>
+      <div class="skills-list">
+        <div class="skill-badge">Deep Learning</div>
+        <div class="skill-badge">Rendering</div>
+        <div class="skill-badge">Python</div>
+        <div class="skill-badge">PyTorch</div>
+        <div class="skill-badge">Computer Vision</div>
+      </div>
     </a>
 
-    <a class="project-card" href="projects/fraud-detection.html">
-      <img src="images/fraud.png" alt="Fraud Detection">
-      <h3>IEEE-CIS Fraud Detection</h3>
-      <p>Created a pipeline to detect fraudulent online transactions using feature engineering and ensemble learning.</p>
-    </a>
-
-    <a class="project-card" href="projects/restaurant-robot.html">
-      <img src="images/robot.gif" alt="Restaurant Robot">
-      <h3>Restaurant Navigation Robot</h3>
-      <p>Designed a 4-wheeled robot that autonomously navigates rectilinear restaurant layouts using A* and D* Lite.</p>
-    </a>
-
-    <a class="project-card" href="projects/capstone.html">
-      <img src="images/capstone.png" alt="Capstone Project">
-      <h3>Capstone Group Project</h3>
-      <p>Built a warehouse automation prototype using robotic arm control, object detection and ROS integration.</p>
-    </a>
   </section>
 
   <!-- Work Experience Section -->
