@@ -26,8 +26,45 @@
       border-radius: 20px;
     }
 
-    .education-preview, .experience-preview {
+    .intro-block {
       flex: 1;
+      padding: 0 10px;
+    }
+
+    .contact-icons {
+      margin-top: 20px;
+      display: flex;
+      gap: 30px;
+      align-items: center;
+    }
+
+    .contact-icons a {
+      text-align: center;
+      text-decoration: none;
+      color: inherit;
+      font-size: 0.85rem;
+      font-weight: 500;
+    }
+
+    .contact-icons a img {
+      height: 48px;
+      width: 48px;
+      margin-bottom: 6px;
+    }
+
+
+    .dual-section {
+      display: flex;
+      justify-content: space-around;
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 20px;
+      gap: 40px;
+    }
+
+    .dual-section .section-block {
+      flex: 1;
+      max-width: 480px;
     }
 
     .card-preview-grid {
@@ -50,18 +87,15 @@
     }
 
     .card-preview img {
-      height: 48px;
-      width: auto;
+      height: 64px;
+      width: 64px;
+      object-fit: contain;
+      border-radius: 8px;
     }
+
 
     .card-preview:hover {
       transform: scale(1.03);
-    }
-
-    .intro-block, .experience-section, .education-section-detail {
-      max-width: 1000px;
-      margin: 40px auto;
-      padding: 0 20px;
     }
 
     .project-grid {
@@ -111,6 +145,7 @@
     .project-card a h3 {
       color: #0366d6;
     }
+
     .skills-list {
       display: flex;
       flex-wrap: wrap;
@@ -138,45 +173,86 @@
     <div class="profile-photo">
       <img src="page_images/profile.jpeg" alt="Harsh Verma">
     </div>
+    <div class="intro-block">
+      <h2>Hi, I'm Harsh</h2>
+      <p>
+        I design and develop robust robotic perception and motion planning pipelines that bridge the gap between research and industrial deployment. With a Master's in Robotics Engineering from WPI and hands-on experience at Confinity Robotics, I specialize in Computer Vision, Robot Calibration, and Motion Planning, building scalable solutions using ROS2, PyTorch, and C++.
 
-    <div class="education-preview">
+        From optimizing factory automation with 9-DOF robotic systems to developing Neural Radiance Fields and Tesla-style visual dashboards, I bring a strong blend of technical depth, creativity, and fast-paced execution to the teams I work with.
+
+        I'm currently looking for opportunities where I can contribute to cutting-edge robotics, computer vision, or autonomy teams — and continue pushing the boundaries of what machines can perceive and do.
+      </p>
+      <div class="contact-icons">
+        <a href="mailto:harshverma.ro@gmail.com">
+          <img src="icons/email_icon.png" alt="Email">
+          <div>Email</div>
+        </a>
+        <a href="https://www.linkedin.com/in/harsh-v01/" target="_blank">
+          <img src="icons/linkedin.png" alt="LinkedIn">
+          <div>LinkedIn</div>
+        </a>
+        <a href="https://github.com/harshv01" target="_blank">
+          <img src="icons/github.png" alt="GitHub">
+          <div>GitHub</div>
+        </a>
+      </div>
+      
+    </div>
+  </div>
+
+  <!-- Dual Section: Education and Work Experience Side-by-Side -->
+  <div class="dual-section">
+    <section class="section-block">
       <h2>Education</h2>
       <div class="card-preview-grid">
         <a class="card-preview" href="#education-details">
           <img src="page_images/wpi_logo.jpg" alt="WPI logo">
           <div>
-            <strong>MS in Robotics Engineering</strong><br />WPI (2023–2025)
+            <strong>MS in Robotics Engineering</strong><br />Worcester Polytechnic Institute (2023–2025)
           </div>
         </a>
         <a class="card-preview" href="#education-details">
           <img src="page_images/vit_logo.png" alt="VIT logo">
           <div>
-            <strong>BTech in Mechanical Engineering</strong><br />VIT (2019–2023)
+            <strong>BTech in Mechanical Engineering</strong><br />Vellore Institute of technology (2019–2023)
           </div>
         </a>
       </div>
-    </div>
+    </section>
 
-    <div class="experience-preview">
-      <h2>Experience</h2>
+    <section class="section-block" id="experience-details">
+      <h2>Work Experience</h2>
       <div class="card-preview-grid">
         <a class="card-preview" href="#experience-details">
           <img src="page_images/confinity_robotics_logo.jfif" alt="Company logo">
           <div>
-            <strong>Robotics Engineer Intern</strong><br />Confinity Robotics
+            <strong>Robotics Engineering Co-op (Present)</strong><br />
+            Confinity Robotics<br />
+            <span class="experience-dates">May 2024 – May 2025</span>
+          </div>
+        </a>
+
+        <a class="card-preview" href="#experience-details">
+          <img src="icons/elpis_logo.jpg" alt="Company logo">
+          <div>
+            <strong>Directed Researcher</strong><br />
+            WPI ELPIS Lab<br />
+            <span class="experience-dates">Jan 2024 – May 2024</span>
+          </div>
+        </a>
+
+        <a class="card-preview" href="#experience-details">
+          <img src="icons/falcons_logo.jfif" alt="Company logo">
+          <div>
+            <strong>Student Engineer</strong><br />
+            Assailing Falcons, SAE Aero Design<br />
+            <span class="experience-dates">Jan 2022 – May 2023</span>
           </div>
         </a>
       </div>
-    </div>
+    </section>
   </div>
 
-  <!-- Intro Section -->
-  <section class="intro-block">
-    <h2>Hi, I'm Harsh</h2>
-    <p>
-      I'm a Robotics Engineer passionate about motion planning, perception, and intelligent autonomous systems.
-    </p>
-  </section>
 
   <!-- Projects Section -->
   <section class="project-grid">
