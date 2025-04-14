@@ -206,12 +206,44 @@
     .experience-entry ul li {
       margin-bottom: 8px;
     }
+ 
+    .top-header {
+      background-color: #000;
+      color: white;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 16px 40px;
+    }
 
+    .site-title {
+      margin: 0;
+      font-size: 1.5rem;
+      color: white;
+    }
+
+    .nav-links a {
+      margin-left: 24px;
+      color: white;
+      text-decoration: none;
+      font-weight: 500;
+      font-size: 1rem;
+      transition: color 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #aaa;
+    }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Harsh Verma</h1>
+  <header class="top-header">
+    <h1 class="site-title">Harsh Verma</h1>
+    <nav class="nav-links">
+      <a href="#projects">Projects</a>
+      <a href="#experience-details">Experience</a>
+      <a href="#education-details">Education</a>
+    </nav>
   </header>
 
   <!-- Top Layout -->
@@ -266,7 +298,7 @@
       </div>
     </section>
 
-    <section class="section-block" id="experience-details">
+    <section class="section-block">
       <h2>Work Experience</h2>
       <div class="card-preview-grid">
 
@@ -303,6 +335,7 @@
 
 
   <!-- Projects Section -->
+  <h2 style="max-width: 1200px; margin: 40px auto 20px; padding: 0 20px;" id="projects">Projects</h2>
   <section class="project-grid">
     <a class="project-card" href="projects/nerf/nerf.html">
       <img src="/projects/nerf/images/nerf_main.gif" alt="NeRF project GIF">
@@ -373,8 +406,9 @@
   </section>
 
   <!-- Work Experience Section -->
-  <section class="experience-section" id="experience-details">
-    <h2>Work Experience</h2>
+  <h2 style="max-width: 1200px; margin: 40px auto 20px; padding: 0 20px;" id="experience-details">Work Experience</h2>
+  <section class="experience-section" >
+    <!-- <h2>Work Experience</h2> -->
   
     <div class="experience-entry" id="confinity">
       <img src="page_images/confinity_robotics_logo.jfif" alt="Confinity Robotics" />
@@ -420,7 +454,7 @@
 
   <!-- Education Detail Section -->
   <section class="education-section-detail" id="education-details">
-    <h2>Education</h2>
+    <!-- <h2>Education</h2> -->
     <!-- Add detailed education content here -->
   </section>
 
